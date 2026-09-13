@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="icon/playlsit.svg" alt="playlsit" id="playlsit-img">
+        <h2>FEEL THE MUSIC</h2>
+        <img src="icon/music.svg" alt="musics" id="music-img">
+    </header>
+    <main>
+        <div class="right">
+            <div class="details">
+                <h3 id="song-name">Let ME Love You</h3>
+                <h5 id="song-singer">Justine Bebber</h5>
+            </div>
+            <input type="range"id="song-duration" onchange="duration()">
+            <div class="controls">
+                <div class="backward-img">
+                    <img src="icon/backward.svg" alt="backward" id="backward-img"
+                    onclick="previousSong()">
+                </div>
+                <div class="play-pause">
+                    <img src="icon/play.svg" alt="play-pause" id="play-pause"
+                    onclick="playPause()">
+                </div>
+                <div class="forward-img">
+                    <img src="icon/forward.svg" alt="forward" id="forward-img"
+                    onclick="nextSong()">
+                </div>
+
+                
+                
+                
+
+
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="left">
+            <div class="song-image">
+                <img src="gif/bar.gif" id="musicanim">
+
+            </div>
+            <div class="volume-div">
+            <div class="volume-img"><img src="icon/volume.svg" alt="volume" id="vol-svg"></div>
+            <input type="range" id="volume-range" onchange="volume()">
+
+
+        </div>
+
+        </div>
+
+
+        <div class="playlist">
+            <div class="playlist-song">
+                <img src="covers/1.jpg" alt="">
+                <div class="song-details">
+                    <h3>Mortals</h3>
+                    <h2>Warriyo</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/2.jpg" alt="">
+                <div class="song-details">
+                    <h3> wgft feat. </h3>
+                    <h2> Burna boy</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/3.jpg" alt="">
+                <div class="song-details">
+                    <h3> Invincible</h3>
+                    <h2>Deaf kev</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/4.jpg" alt="">
+                <div class="song-details">
+                    <h3>My Heart</h3>
+                    <h2>Different Heaven & Eh!de</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/5.jpg" alt="">
+                <div class="song-details">
+                    <h3>Heroes Tonight</h3>
+                    <h2>Janji & Johning</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/6.jpg" alt="">
+                <div class="song-details">
+                    <h3>Kalyani</h3>
+                    <h2>ARJN, KDS</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/7.jpg" alt="">
+                <div class="song-details">
+                    <h3>Beedi</h3>
+                    <h2>Vishal Bhardwai</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/8.jpg" alt="">
+                <div class="song-details">
+                    <h3>Naal Nachna</h3>
+                    <h2>Afsana khan,Reble</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/9.jpg" alt="">
+                <div class="song-details">
+                    <h3>AZUL</h3>
+                    <h2>Guru Randhawa</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/10.jpg" alt="">
+                <div class="song-details">
+                    <h3>Bairi</h3>
+                    <h2>Virat , Pradeepm Solanki</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="covers/11.jpg" alt="">
+                <div class="song-details">
+                    <h3>Bairi-2</h3>
+                    <h2>Virat , Pradeepm Solanki</h2>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"> </script>
+</body>
+</html>
